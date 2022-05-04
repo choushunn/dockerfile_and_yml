@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  master1:
+    image: nginx
+    stdin_open: true
+    tty: true
+    ports:
+      - "80:80"
+    volumes:
+      - ./data:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf

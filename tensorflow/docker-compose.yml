@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  tensorflow1:
+    image: tensorflow/tensorflow:latest-jupyter
+    stdin_open: true
+    tty: true
+    ports:
+      - "8888:8888"
